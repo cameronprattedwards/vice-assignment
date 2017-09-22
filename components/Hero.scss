@@ -1,6 +1,9 @@
+@import './constants';
+
 .hero {
-  text-align: center;
   font-weight: 600;
+  margin-top: 50px;
+  text-align: center;
 }
 
 .image {
@@ -8,13 +11,13 @@
 }
 
 .episodes {
-  color: gray;
+  color: $color-text-gray;
   font-size: 12px;
   margin-top: 15px;
 }
 
 .title {
-  color: black;
-  font-size: 15px;
+  color: $color-black;
+  font-size: 18px;
   margin-top: 15px;
 }

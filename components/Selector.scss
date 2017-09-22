@@ -1,9 +1,11 @@
+@import './constants';
+
 .box {
-  background-color: gray;
+  background-color: $color-box-gray;
   display: inline-block;
-  width: 50px;
   height: 50px;
   margin: 0 10px;
+  width: 50px;
 }
 
 .link {
@@ -16,29 +18,42 @@
 
   &.selected {
     .box {
-      background-color: black;
+      background-color: $color-black;
     }
 
     .id {
+      color: $color-black;
       visibility: visible;
-      color: black;
     }
   }
 }
 
 .id {
-  color: gray;
+  color: $color-box-gray;
   display: block;
   visibility: hidden;
 }
 
 .selector {
-  border: 1px #ddd solid;
   display: inline-block;
-  margin: 50px;
+  margin: 50px 50px 0;
   padding: 33px 0 35px;
+
+  @media (max-width: 980px) {
+    margin-top: 10px;
+    padding-top: 10px;
+  }
 }
 
 .selectorWrapper {
+  background-color: white;
   text-align: center;
+
+  @media (max-width: 980px) {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    white-space: nowrap;
+  }
 }
