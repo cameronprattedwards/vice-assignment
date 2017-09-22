@@ -15,8 +15,6 @@ class Root extends React.Component {
     const selectedId = parseInt(query.id || 1);
     const selectedShow = indexedShows[selectedId];
 
-    console.log(query);
-
     return (
       <div className={css.root}>
         <Selector ids={ids} selectedId={selectedId} />
