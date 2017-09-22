@@ -22,6 +22,8 @@ In index.html, rebuild the mocks in the designs folder in semantic HTML, CSS and
 ## To Run:
 
 ```
+git clone https://github.com/cameronprattedwards/vice-assignment.git
+cd vice-assignment
 npm install
 node_modules/.bin/webpack
 node_modules/.bin/babel-node webServer
