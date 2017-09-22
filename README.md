@@ -19,13 +19,12 @@ In index.html, rebuild the mocks in the designs folder in semantic HTML, CSS and
 - When clicking between shows, hitting “Back” and “Forward” on the browser will also update the url, cover image, title, and episode count according to the show id.
 - The minimum width of the screen is 320px. The horizontal breakpoint is at 980px. Build with a mobile first approach.
 
-## Approach
+## To Run:
 
-Add a hero component and a selector component. 
+```
+npm install
+node_modules/.bin/webpack
+node_modules/.bin/babel-node webServer
+```
 
-The selector component accepts a list of IDs, and then just links to those IDs with a bunch of gray boxes. It also accepts a selected ID.
-
-The hero component accepts an imageUrl prop, a title prop, and an episodes prop. And it displays them.
-
-It seems like Redux is really unnecessary in this case. We have a single route, and one root component that gets the ID of the show from the URL, then passes that ID into the components. It gets the current show, the selected ID, and a list of IDs, and passes them into the selector and the hero. Let's just absolutely position the selector, so we can move it above and below responsively.
-
+Then visit http://localhost:7000 and start clicking!
